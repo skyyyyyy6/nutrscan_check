@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "NutraScan",
+    "slug": "nutrascan",
+    "version": "1.0.0",
+    "sdkVersion": "50.0.0", 
+    "orientation": "portrait",
+    "platforms": ["ios", "android"],
+    "assetBundlePatterns": ["**/*"],
+
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.nutrascan",  
+      "infoPlist": {
+        "NSCameraUsageDescription": "We need access to your camera to capture food images.",
+        "NSPhotoLibraryUsageDescription": "We need access to your photo library to save captured images."
+      }
+    },
+
+    "android": {
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",  
+        "WRITE_EXTERNAL_STORAGE"  
+      ],
+      "package": "com.yourcompany.nutrascan",  
+      "versionCode": 1  
+    },
+
+    "jsEngine": "hermes"  
+  }
+}
